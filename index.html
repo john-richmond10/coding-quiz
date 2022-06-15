@@ -8,7 +8,54 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>Coding Quiz</title>
 </head>
+<!-- Header bar containing link to highscores and timer -->
+<header>
+    <nav>
+        <ul>
+            <li id="viewHighscores"><a href="#">View High Scores</a></li>
+            <li id="timer">Time: <span id="time">0</span></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
+<!-- Section containing quiz instructions and start button -->
+    <section>
+        <h1>Coding Quiz!</h1>
+        <p>Welcome to my Coding Quiz!</p>
+        <br>
+        <p>This quiz will challenge your knowledge of JavaScript and provide you with highscores so you can track your progress!</p>
+        <br>
+        <p>For every question you get wrong your time/score will decrease</p>
+        <br>
+        <p>Click the Start button below to begin the quiz!</p>
+        <button id="startBtn" class="btn">Start!</button>
+    </section>
+
+    <!-- Questions and answers will be displyed dynamically with JavaScript -->
+    <section id="quiz" class="hidden"></section>
+
+    <!-- Submitting scores will be done through JavaScript -->
+    <section id="totalScore" class="hidden">
+        <h1>Quiz Complete!</h1>
+        <p>You scored: <span id="score"></span></p>
+        <form id="saveScore">
+            <label for="initials">Initials:</label>
+            <input type="text" id="initials" placeholder="ex" name="initials"><br>
+            <button id="submitBtn" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores">
+        <h2>High Scores!</h2>
+        <ul id="scores">
+            <!-- List from JavaScript -->
+        </ul>
+        <button id="returnBtn" class="btn">Return</button>
+        <button id="clearBtn" class="btn">Clear All Scores</button>
+    </section>
+
+    <script src="./assets/script/script.js"></script>
     
 </body>
 </html>
