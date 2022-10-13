@@ -1,0 +1,33 @@
+/* color variables */
+:root {
+    --lightBlue: #7DBBE0;
+    --purple: #8751E0;
+    --orange: #E08100;
+}
+
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+p, span, label {
+    font-size: 35px;
+}
+
+input {
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
