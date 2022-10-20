@@ -11,6 +11,7 @@ let submitBtnEl = document.querySelector('#submitBtn');
 let scoresEl = document.querySelector('#scores');
 let returnBtnEl = document.querySelector('#returnBtn');
 let clearBtnEl = document.querySelector('#clearBtn');
+let answerBtnEl = document.querySelector('#answerBtn');
 
 let questions = [
     {
@@ -121,7 +122,7 @@ function toggleSections(hiddenSection, shownSection) {
     }
 }
 
-startQuizEl.onclick = function createQuiz(event) {
+function createQuiz(event) {
     event.preventDefault();
     let questionEl = document.createElement("h1");
     questionEl.className = "question";
@@ -159,4 +160,7 @@ function correctAnswer() {
     }
 }
 
+// Start quiz
+startQuizEl.onclick = createQuiz;
 
+answerBtnEl.onclick = correctAnswer;
