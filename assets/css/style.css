@@ -16,6 +16,7 @@
 h1 {
     font-size: 50px;
     color: var(--purple);
+    justify-content: center;
 }
 
 p, span, label {
@@ -30,4 +31,34 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px 20px 20px;
+}
+
+/* #introduction {
+    justify-content: center;
+    align-items: center;
+} */
+
+header #viewHighScores {
+    font-size: 30px;
+}
+
+header #timer {
+    font-size: 30px;
+}
+
+#introduction h1, p, button {
+    text-align: center;
+}
+
+#totalScore h1, p, form {
+    text-align: center;
+}
+
+#highscores h1, ul {
+    text-align: center;
+    justify-content: center;;
+}
+
+#highscoresPage h1, ul {
+    text-align: center;
 }
